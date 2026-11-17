@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Sale Prediction Interface</title>
+        <link rel="stylesheet" href="prediction int.css">
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <h1>Sale Prediction  Interface</h1>
+                <p> Estimate Next Month sale</p>
+            </header>
+            <section class="input-section">
+                <h2>Business Inputs</h2>
+                <div class="form-group">
+                    <label for="previoussale">
+                        Previous Month Sale
+                    </label>
+                    <input
+                    type="number"
+                    ID="previoussale"
+                    placeholder="Enter previous sale"
+                    >
+                </div>
+                <div class="form-group">
+                    <label for="orders">
+                        Number Of Orders
+                    </label>
+                    <input
+                    type="number"
+                    ID="orders"
+                    placeholder="Enter number of orders"
+                    >
+                </div>
+                <div class="form-group">
+                    <label for="customers">
+                        Number Of Customers
+                    </label>
+                    <input
+                     type="number"
+                     ID="customers"
+                     placeholder="Enter number of customer"
+                     >
+                </div>
+                <div class="form-group">
+                    <label for="averageorder">
+                        Average orders value
+                    </label>
+                    <input
+                    type="number"
+                    ID="averageorder"
+                    placeholder="Enter average order value"
+                    >
+                </div>
+                <button onclick="prediction()">
+                  Predict Next Month Sale
+                </button>
+            </section>
+            <section class="prediction-section">
+                <h2>Prediction Result</h2>
+                <div class="prediction-card">
+                    <h3>Prediction Sale</h3>
+                    <p ID="predictionsale">
+                        ₹0
+                    </p>
+                </div>
+                <div class="prediction-card">
+                    <h3> Expected Grouth</h3>
+                    <p ID="growth">
+                        0%
+                    </p>
+                </div>
+                <div class="prediction-card">
+                    <h3>Prediction Status</h3>
+                    <p ID="status">
+                        Not Avalable
+                    </p>
+                </div>
+            </section>
+            <section class="interpretation">
+                <h2>Busness Interprefation</h2>
+                <p ID="interpretationText">
+                    Enter business information to generate a prediction
+                </p>
+            </section>
+            <footer>
+                <p>Sale Anlaystics System/ Internal Business use 
+                </p>
+            </footer>
+        </div>
+        <script src="prediction_interface.js"></script>
+    </body>
+</html>
